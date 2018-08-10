@@ -12,6 +12,30 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+/*
+multiples of 3 fizz
+multiples of 5 buzz
+3 and 5 fizzbuzz
+*/
+
+function fizzBuzz(n) {
+  let result = '';
+
+  for (let i = 1; i <= n; i++) {
+    result = '';
+
+    if (i % 3 === 0) {
+      result += 'fizz';
+    }
+    if (i % 5 === 0) {
+      result += 'buzz';
+    }
+    if (result !== '') {
+      console.log(result);
+    } else {
+      console.log(i);
+    }
+  }
+}
 
 module.exports = fizzBuzz;
