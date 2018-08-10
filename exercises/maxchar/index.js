@@ -25,11 +25,7 @@ function maxChar(str) {
   let storage = str[0];
 
   for (let i = 0; i < str.length; i++) {
-    if (result[str[i]]) {
-      result[str[i]] += 1;
-    } else {
-      result[str[i]] = 1;
-    }
+    result[str[i]] = result[str[i]] + 1 || 1;
   }
 
   for (let key in result) {
