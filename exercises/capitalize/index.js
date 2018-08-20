@@ -19,7 +19,7 @@ capitalize the first letter of every value in that array
 join them back by space
 */
 // let arr = [ 'a', 'short', 'sentence' ];
-// arr[i][0]
+
 
 function capitalize(str) {
   let strSpl = str.split(" ");
